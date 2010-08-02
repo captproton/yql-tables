@@ -15,11 +15,11 @@
 <bindings>
     <select itemPath="results" produces="XML">
         <urls>
-            <url><![CDATA[https://api.meetup.com/2/events.xml?key={key}]]></url>
+            <url><![CDATA[http://api.meetup.com/2/events.xml?key={key}]]></url>
         </urls>
         <inputs>
 			<key id="key" type="xs:string" paramType="path" required="true"/>
-			<key id="topic" type="xs:string" paramType="query"/>
+			<key id="topic" type="xs:string" paramType="query" default="flex"/>
             <key id="zip" type="xs:string" paramType="query"/>
             <key id="country" type="xs:string" paramType="query"/>
             <key id="city" type="xs:string" paramType="query"/>
