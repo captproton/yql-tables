@@ -13,7 +13,7 @@
     <sampleQuery>select * from {table} where key='...' and topic='flex';</sampleQuery>
 </meta>
 <bindings>
-    <select itemPath="results/items" produces="XML">
+    <select itemPath="results" produces="XML">
         <urls>
             <url><![CDATA[http://api.meetup.com/2/events.xml?key={key}]]></url>
         </urls>
