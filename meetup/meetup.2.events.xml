@@ -15,7 +15,7 @@
 <bindings>
     <select itemPath="results" produces="XML">
         <urls>
-            <url><![CDATA[http://api.meetup.com/2/events.xml?key={key}]]></url>
+            <url><![CDATA[https://api.meetup.com/2/events.xml?after=0d&key={key}]]></url>
         </urls>
         <inputs>
 			<key id="key" type="xs:string" paramType="path" required="true"/>
